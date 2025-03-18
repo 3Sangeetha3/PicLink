@@ -138,8 +138,8 @@ function UploadForm() {
     try {
       // Simulating network delay for demo purposes
       await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      const response = await fetch("http://localhost:3001/upload", {
+      const VITE_API_URL = import.meta.env.VITE_BACKEND_URL;
+      const response = await fetch(`${VITE_API_URL}/upload`, {
         method: "POST",
         body: formData,
       });
