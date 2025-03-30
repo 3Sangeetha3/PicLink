@@ -23,8 +23,7 @@
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
-  "packageManager": "pnpm@10.6.1",
   "engines": {
-    "node": "18.x"
+    "node": "23.x"
   }
 }
